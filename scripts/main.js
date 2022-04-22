@@ -16,9 +16,6 @@ const Content3 = document.querySelector('.content3');
 ///////////////////////////////////////
 ////////////  Misc 1  ////////////////
 //////////////////////////////////////
-MobileNavLink.classList.remove('removeContent');
-MobileNavLink.classList.remove('addContent');
-MContent1.classList.remove('removeContent');
 
 MContent2.classList.remove('removeContent')
 
@@ -151,6 +148,12 @@ Link3.addEventListener('click', function() {
 //////////////////////////////////////
 const Ham = document.getElementById('nav__mobile');
 const MobileNavLink = document.getElementById('nav__mobileLinks');
+MobileNavLink.classList.remove('removeContent');
+
+MobileNavLink.classList.remove('showContent');
+
+MContent1.classList.remove('removeContent');
+Ham.classList.remove('openMobileMenu');
 
 Ham.addEventListener('click', function (){
     if (Ham.classList.contains('openMobileMenu')){
