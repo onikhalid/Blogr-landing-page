@@ -153,7 +153,7 @@ const MobileNavLink = document.getElementById('nav__mobileLinks');
 
 
 
-Ham.classList.remove('openMobileMenu');
+
 
 Ham.addEventListener('click', function (){
     if (Ham.classList.contains('openMobileMenu')){
