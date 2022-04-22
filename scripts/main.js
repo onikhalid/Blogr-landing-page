@@ -148,11 +148,11 @@ Link3.addEventListener('click', function() {
 //////////////////////////////////////
 const Ham = document.getElementById('nav__mobile');
 const MobileNavLink = document.getElementById('nav__mobileLinks');
-MobileNavLink.classList.remove('removeContent');
 
-MobileNavLink.classList.remove('showContent');
 
-MContent1.classList.remove('removeContent');
+
+
+
 Ham.classList.remove('openMobileMenu');
 
 Ham.addEventListener('click', function (){
