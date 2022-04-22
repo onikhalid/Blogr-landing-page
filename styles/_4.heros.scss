@@ -1,0 +1,153 @@
+.hero{
+    margin: 5rem auto;
+    padding: 2rem 0;
+    overflow: hidden;
+    @media(min-width: 1024px){
+        margin: 7.5rem auto;        
+    }
+
+
+    h3{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin-top: 0.5rem;
+        color: $Verydarkgrayishblue;
+    }
+
+    &__title{
+        @media(min-width: 1024px){
+            font-size: 2.2rem !important;
+            margin-bottom: 5rem;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        margin: 3rem auto;
+        &Img{
+            overflow: clip;
+            width: 100vw;
+            margin-bottom: 2rem;
+        }
+        &Texts{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 0 3.5rem;
+        }
+
+        @media(min-width: 1024px){
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            margin: 3rem auto;
+            padding-left: 5rem;
+            text-align: left;
+            h3{
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 1.2rem;
+                line-height: 2.5rem;
+                margin-top: 0.5rem;
+            }
+            &Img{
+                width: 200%;
+                max-width: 35rem;
+                transform: scale(1.5) translateX(10%);
+          
+            }
+            &Texts{
+                display: flex;
+                flex-direction: column;
+                gap: 5rem;
+                padding: 0 7.5rem 0 5rem;
+            }
+        }
+
+        @media(min-width: 1700px){
+            &Texts{
+                padding: 0 17.5rem 0 5rem;
+            }
+        }
+    }
+}
+
+
+
+
+.hero2{
+    margin: 5rem auto;
+    padding: 2rem 0;
+    overflow: hidden;
+    @media(min-width: 1024px){
+        margin: 7.5rem auto;        
+    }
+
+
+    h3{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin-top: 0.5rem;
+        color: $Verydarkgrayishblue;
+    }
+
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        margin: 3rem auto;
+        &Img{
+            width: 100vw;
+            margin-bottom: 2rem;
+            overflow: clip;
+        }
+        &Texts{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 0 3.5rem;
+        }
+
+        @media(min-width: 1024px){
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 3rem auto;
+            padding: 5rem 0;
+            text-align: left;
+            h3{
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 1.2rem;
+                line-height: 2.5rem;
+                margin-top: 0.5rem;
+            }
+            &Img{
+                width: 200%;
+                max-width: 35rem;
+                transform: scale(1.5) translateX(-12%);
+          
+            }
+            &Texts{
+                display: flex;
+                flex-direction: column;
+                gap: 5rem;
+                padding: 0 10rem 0 5rem;
+            }
+        }
+
+        @media(min-width: 1700px){
+            &Texts{
+                padding: 0 17.5rem 0 5rem;
+            }
+        }
+    }
+}

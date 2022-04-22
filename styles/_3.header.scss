@@ -1,0 +1,257 @@
+.header{
+    background-image: url(../images/bg-pattern-intro-mobile.svg), linear-gradient(to right, hsl(355, 100%, 74%), hsl(356, 100%, 66%));
+    background-repeat: no-repeat;
+    background-size: 70rem;
+    background-position: 28% 27%;
+    border-radius: 0 0 0 80px;
+    padding: 4rem 2rem;
+    padding-top: 3rem;
+    @media(min-width:1024px){
+        background-image: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(to right, hsl(355, 100%, 74%), hsl(356, 100%, 66%));
+        background-position: 27% 52%;
+        background-size: initial;
+        padding: 4rem 10rem;
+
+    }
+
+
+
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        @media(min-width:1024px){
+            gap: 2.5rem;
+            justify-content: initial;
+        }
+        
+        &__desktop{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 1;
+            
+            &Links{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2.5rem;
+                
+
+                #desktoplink{
+                    position: relative;
+                    &:hover, &:active &:focus, &:visited{
+                        color: $White;
+                    }
+                }
+                
+                #desktoplink__content{
+                    visibility: collapse;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    position: absolute;
+                    overflow: auto;
+                    background-color: $White;
+                    padding: 1.5rem 3rem 1.5rem 1.5rem;
+                    margin-top: 1rem;
+                    border-radius: 5px;
+                    text-align: left;
+                    transition: all ease-in-out 300ms;
+                    width: 15%;
+                    max-width: 170px;
+
+                    & a{
+                        color: $Verydarkblackblue;
+                        font-size: 1rem;        
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+            &CTA{
+                display: flex;
+                gap: 0.2rem;
+
+                .btn{
+                    padding: 0.75rem 1.5rem;
+                    border-radius: 2rem;
+                }
+                .btn1{
+                    background-color: transparent;
+                    color: $White;
+                    &:hover{
+                        background-color: $Verylightred;
+                        color: $White;
+                    }
+                }
+                .btn2{
+                    background-color: $White;
+                    color: $Lightred;
+                    &:hover{
+                        background-color: transparent;
+                        color: $White;
+                        background-image: none;
+                        border: solid 1px $White;
+                    }
+                }
+            }
+        }
+
+
+
+
+        &__mobile{
+
+            & > span.nav__mobileHamburger{
+                display: block;
+                width: 1.5rem;
+                height: 0.12rem;
+                background-color: $White;
+                margin-bottom: 0.25rem;
+                transform-origin: 3.5px 1.25px
+            }
+            &Links{
+                position: absolute;
+                width: 80%;
+                left: 10%;
+                right: 10%;
+                max-width: 750px;
+
+                display: flex;
+                visibility: collapse;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2.5rem;
+
+                background-color: $White;
+                padding: 1.5rem 3rem;
+                margin-top: 2rem;
+                border-radius: 5px;
+
+                
+
+                #mobilelink{
+                    position: relative;
+                    color: $Verydarkblackblue;
+                    &:hover, &:active &:focus, &:visited{
+                        color: $Verydarkblackblue;
+                    }
+                
+                    &__content{
+                        visibility: collapse;
+                        position: relative;
+                        display: none;
+                        
+
+                        & a{
+                            color: $Verydarkblackblue;
+                            font-size: 1rem;        
+                            margin-bottom: 1rem;
+
+                        }
+                    }
+                }
+                .MContentOpen#mobilelink__content{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    background-color: $Grayishblue;
+                    padding: 0.5rem 3rem;
+                    margin-top: 1rem;
+                    border-radius: 5px;
+                    transition: all ease-in-out 300ms;
+                    width: 100%;
+                
+                }
+            }
+
+            &CTA{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 0.75rem;
+                padding-top: 2rem;
+                margin-top: 2rem;
+                border-top: solid 1px $Verydarkblackblue;
+
+                .btn{
+                    padding: 0.75rem 1.5rem;
+                    border-radius: 2rem;
+                }
+                .btn1{
+                    background-color: transparent;
+                    color: $Verydarkblackblue;
+                    font-family: 'Overpass';
+                    &:hover{
+                        background-color: $Verylightred;
+                        color: $White;
+                    }
+                }
+                .btn2{
+                    color: $White;
+                    background-image: linear-gradient(to right, hsl(355, 100%, 74%), $Lightred );
+                    &:hover{
+                        background-color: $White;
+                        color: $Lightred;
+                        background-image: none;
+                        border: solid 1px $Lightred;
+                    }
+                }
+            }
+        
+        }
+    }
+
+
+
+
+    &__texts{
+        padding: 4rem 0;
+        &Titl{
+            color: $White;
+            margin-top: 3rem;
+            font-size: 2.1rem;
+            font-weight: 600;
+            @media(min-width: 1024px){
+                font-size: 3rem;                
+            }
+        }
+        &Subtitle{
+            color: $White;
+            font-weight: 300;
+            margin-bottom: 3rem;
+        }
+        &BtnGrp{
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+
+            .btn{
+                padding: 0.75rem 1rem;
+                border-radius: 2rem;
+            }
+            .btn1{
+                background-color: $White;
+                color: $Lightred;
+                &:hover{
+                    background-color: $Verylightred;
+                    color: $White;
+                }
+            }
+            .btn2{
+                background-color: transparent;
+                color: $White;
+                border: solid 1px $White;
+                &:hover{
+                    background-color: $White;
+                    color: $Lightred;
+                }
+            }
+        }
+    }
+}

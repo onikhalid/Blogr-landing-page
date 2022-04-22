@@ -1,0 +1,176 @@
+/////////////////////////////////////////////////////
+//////////HIDE , SHOW NAV////////
+/////////////////////////////////////////////////////
+.hideMobile{
+    @media(max-width: 1024px){
+        display: none !important;
+    }
+}
+.hideDesktop{
+    @media(min-width: 1023px){
+        display: none !important;
+    }
+}
+
+.openMobileMenu{
+    & > span:nth-child(1){
+        transform: rotate(45deg);
+    }
+    & > span:nth-child(2){
+        opacity: 0;
+    }
+    & > span:nth-child(3){
+        transform: rotate(-45deg);
+    }
+}
+
+
+
+/////////////////////////////////////////////////////
+////////////NAV LINKS ARROW SHAPE ANIMATION//////////
+/////////////////////////////////////////////////////
+.desktoplink{
+    gap: 0.5rem;
+    color: $White;
+    & > span{
+        & > span:nth-child(1){
+            display: inline-block;
+            transform: rotate(45deg);
+            background-color: $White;
+            width: 0.45rem;
+            height: 0.15rem;
+            border-radius: 50px;
+            transform-origin: 8px 1px;
+        }
+        & > span:nth-child(2){
+            display: inline-block;
+            transform: rotate(-45deg);
+            background-color: $White;
+            width: 0.38rem;
+            height: 0.15rem;
+            border-radius: 50px;
+            transform-origin: -2px 1px;
+        }
+    }
+}
+.desktoplinkOpen{
+    
+    & > span{
+        & > span:nth-child(1){
+            display: inline-block;
+            transform: rotate(-45deg);
+            background-color: $White;
+            width: 0.45rem;
+            height: 0.15rem;
+            border-radius: 50px;
+            transform-origin: 0px -3px;
+        }
+        & > span:nth-child(2){
+            display: inline-block;
+            transform: rotate(45deg);
+            background-color: $White;
+            width: 0.45rem;
+            height: 0.15rem;
+            border-radius: 50px;
+            transform-origin: 7px -2px;
+        }
+    }
+}
+.mobilelink{
+    gap: 0.5rem;
+    & > span{
+        & > span:nth-child(1){
+            display: inline-block;
+            transform: rotate(45deg);
+            background-color: $Lightred;
+            width: 0.45rem;
+            height: 0.15rem;
+            border-radius: 50px;
+            transform-origin: 8px 1px;
+        }
+        & > span:nth-child(2){
+            display: inline-block;
+            transform: rotate(-45deg);
+            background-color: $Lightred;
+            width: 0.38rem;
+            height: 0.15rem;
+            border-radius: 50px;
+            transform-origin: -2px 1px;
+        }
+    }
+}
+.mobilelinkOpen{
+
+    & > span{
+        & > span:nth-child(1){
+            display: inline-block;
+            transform: rotate(-45deg);
+            background-color: $Lightred;
+            width: 0.45rem;
+            height: 0.15rem;
+            border-radius: 50px;
+            transform-origin: 0px -3px;
+        }
+        & > span:nth-child(2){
+            display: inline-block;
+            transform: rotate(45deg);
+            background-color: $Lightred;
+            width: 0.45rem;
+            height: 0.15rem;
+            border-radius: 50px;
+            transform-origin: 7px -2px;
+        }
+    }
+}
+
+
+
+
+/////////////////////////////////////////////////////
+////////////NAV LINKS CONTENT SHOW AND HIDE//////////
+/////////////////////////////////////////////////////
+
+
+@keyframes ade-in {
+    0%{
+        opacity: 0;
+        visibility: collapse;
+    }
+    2%{
+        opacity: 0;
+        visibility: visible;
+    }
+
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes ade-out {
+    0%{
+        opacity: 1;
+        visibility: visible;
+    }
+    99%{
+        opacity: 0;
+        visibility: visible;
+    }
+    
+    100%{
+        opacity: 0;
+        visibility: collapse;
+    }
+
+}
+
+.showContent{
+    animation: ade-in 500ms 0.4s both;
+}
+.removeContent{
+    animation: ade-out 350ms 0.4s both;
+}
+
+.MobileLinkGroup{
+    width: 110%;
+}
+

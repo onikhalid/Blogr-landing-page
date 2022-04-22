@@ -1,0 +1,62 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    background-color: $Verydarkblackblue;
+    padding: 5rem 0;
+    border-radius: 0 100px 0 0;
+
+
+    a{
+        color: $White;
+        font-weight: 299;
+        font-size: 1rem;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    span{
+        color: $White;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+    &__links{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        .individualFooterLinkGroup{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+    }
+
+
+    @media(min-width:1024px){
+        flex-direction: initial;
+        justify-content: initial;
+        align-items: flex-start;
+        padding: 5rem 10rem;
+        text-align: left;
+        span{
+            margin-bottom: 1rem;
+        }
+       &__logo{
+           flex: 1;
+        }
+        &__links{
+            display: flex;
+            flex: 5;
+            flex-direction: initial;
+            justify-content: space-around;
+            gap: 2.5rem;
+           .individualFooterLinkGroup{
+            gap: 1.5rem;
+        }
+        }
+    }
+}

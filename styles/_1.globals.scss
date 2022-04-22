@@ -1,0 +1,31 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    transition: all 400ms ease-in-out;
+}
+
+body{
+    height: 100%;
+    font-size: 1.125rem;
+    font-family: 'Overpass';
+    text-align: center;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Overpass';
+    font-weight: '300';  
+    color: $Verydarkgrayblue;  
+}
+
+a{
+    font-family: 'Ubuntu';
+    text-decoration: none;
+}
+a:focus-visible{
+    border: none;
+    outline: none;
+}

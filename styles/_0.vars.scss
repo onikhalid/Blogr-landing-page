@@ -1,0 +1,43 @@
+////////////////////
+//////LAYOUT////////
+////////////////////
+$Mobile: 375px;
+$Tablet: 850px;
+$Desktop: 1440px;
+
+
+///////////////////
+/////COLORS////////
+///////////////////
+
+// #Primary/////////
+
+// (CTA text)
+$Lightred: hsl(356, 100%, 66%);
+// (CTA hover background)
+$Verylightred: hsl(355, 100%, 74%);
+// (headings)
+$Verydarkblue: hsl(208, 49%, 24%);
+
+
+// #Neutral////////
+
+// (text)
+$White: hsl(0, 0%, 100%);
+// (footer text)
+$Grayishblue : hsl(240, 2%, 79%);
+// (body copy)
+$Verydarkgrayishblue : hsl(207, 13%, 34%);
+// (footer background)
+$Verydarkblackblue : hsl(240, 10%, 16%);
+
+
+// ### Gradient//////////
+
+// Background gradient - Intro/CTA mobile nav:
+$VVerylightred: hsl(13, 100%, 72%);
+$Lightred: hsl(353, 100%, 62%);
+
+// Background gradient - body:
+$Verydarkgrayblue: hsl(237, 17%, 21%);
+$Verydarkdesaturatedblue: hsl(237, 23%, 32%);
