@@ -17,11 +17,7 @@ const Content3 = document.querySelector('.content3');
 ////////////  Misc 1  ////////////////
 //////////////////////////////////////
 
-MContent2.classList.remove('removeContent')
 
-MContent3.classList.remove('removeContent')
-
-MLink1.classList.remove('mobilelink');
 
 document.addEventListener('click', function (event) {
     var Inside1 = Link1.contains(event.target);
